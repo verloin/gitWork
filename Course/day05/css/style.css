@@ -202,113 +202,22 @@ li {
   margin: 35px 0 40px 0;
 }
 
-.features_portfolio {
+.features_portfolio,
+.features_work,
+.features_facebook  {
   position: relative;
   width: 300px;
   height: 252px;
 }
 
-.features_portfolio-cart {
-  position: absolute;
-
-}
-
-.features_portfolio-title {
-  position: absolute;
-  left: 72px;
-  font-family: 'Bebas Neue', normal;
-  font-size: 24px;
-  font-weight: 500;
-  color: #e8603c;
-
-}
-
-.features_portfolio-text {
-  position: absolute;
-  top: 82px;
-  font-family: 'HelveticaNeue', normal;
-  font-size: 13px;
-  color: #000;
-  line-height: 1.5;
-  text-align: left;
-}
-
-.features_portfolio-button {
-  position: absolute;
-  top: 230px;
-  width: 57px;
-  height: 31px;
-  font-family: 'Bebas Neue', normal;
-  font-size: 18px;
-  background-color: #e8603c;
-  color: #fff;
-  text-align: center;
-  padding: 5px;
-}
-
-.features_portfolio-button a,
-.features_work-button a,
-.features_facebook-button a {
-  color: #fff;
-}
-
-
-
-.features_work {
-  position: relative;
-  width: 300px;
-  height: 252px;
-}
-.features_work-cart {
-  position: absolute;
-}
-
-.features_work-title {
-  position: absolute;
-  left: 72px;
-  font-family: 'Bebas Neue', normal;
-  font-size: 24px;
-  font-weight: 500;
-  color: #e8603c;
-
-}
-
-.features_work-text {
-  position: absolute;
-  top: 82px;
-  font-family: 'HelveticaNeue', normal;
-  font-size: 13px;
-  color: #000;
-  line-height: 1.5;
-  text-align: left;
-}
-
-.features_work-button {
-  position: absolute;
-  top: 230px;
-  width: 57px;
-  height: 31px;
-  font-family: 'Bebas Neue', normal;
-  font-size: 18px;
-  background-color: #e8603c;
-  color: #fff;
-  text-align: center;
-  padding: 5px;
-}
-
-
-
-
-.features_facebook {
-  position: relative;
-  width: 300px;
-  height: 252px;
-} 
+.features_portfolio-cart,
+.features_work-cart,
 .features_facebook-cart {
   position: absolute;
-
 }
 
+.features_portfolio-title,
+.features_work-title,
 .features_facebook-title {
   position: absolute;
   left: 72px;
@@ -316,10 +225,11 @@ li {
   font-size: 24px;
   font-weight: 500;
   color: #e8603c;
-
 }
 
-.features_facebook-text {
+.features_portfolio-text,
+.features_work-text,
+.features_facebook-text  {
   position: absolute;
   top: 82px;
   font-family: 'HelveticaNeue', normal;
@@ -329,6 +239,8 @@ li {
   text-align: left;
 }
 
+.features_portfolio-button,
+.features_work-button,
 .features_facebook-button {
   position: absolute;
   top: 230px;
@@ -339,5 +251,125 @@ li {
   background-color: #e8603c;
   color: #fff;
   text-align: center;
-  padding: 5px;
+  padding: 8px;
+}
+
+.features_portfolio-button a,
+.features_work-button a,
+.features_facebook-button a {
+  color: #fff;
+}
+
+
+/* ====================  блок Works  ================== */
+
+.block_works {
+  margin-bottom: 50px;
+  padding-top: 1px;
+}
+
+.block_works p {
+  font-family: 'Bebas Neue', normal;
+  font-size: 24px;
+  color: #e8603c;
+  margin-top: 38px;
+  margin-bottom: 26px;
+}
+.block_works-items {
+  display: flex;
+  justify-content: space-between;
+}
+.works_item {
+  border: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.works_item-title {
+  font-family: 'Bebas Neue', normal;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  color: #b9b9b9;
+  margin: 15px 0 3px 15px;
+}
+
+.works_item-date {
+  color: #e8603c;
+  font-size: 11px;
+  margin: 0 0 10px 15px;
+}
+
+/* ==================  footer  ================= */
+
+.footer_inner {
+  position: relative;
+  
+}
+
+.footer_left {
+  position: absolute;
+  background-color: #f2b19c;
+  width: 200px;
+  height: 263px;
+  left: -210px;
+}
+
+.footer_right {
+  position: absolute;
+  background-color: #f2b19c;
+  width: 200px;
+  height: 263px;
+  right: -210px;
+}
+
+.footer_block {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #e8663c;
+  height: 263px;
+}
+
+.footer_block-item01 {
+  max-width: 330px;
+  padding-right: 50px;
+}
+
+.item01, .item03 {
+  margin-left: 35px;
+}
+
+.block_item-title {
+  font-family: 'Bebas Neue', normal;
+  font-size: 24px;
+  color: #fff;
+  margin: 38px 0 25px 0;
+}
+
+.block_item-text {
+  font-family: 'HelveticaNeue', normal;
+  font-size: 12px;
+  color: #fff;
+  margin: 35px 0 15px 0;
+  line-height: 1.2;
+  padding-right: 19px;
+}
+
+.block_item-text span {
+  color: #f2ae97;
+  /* line-height: 1.2; */
+}
+
+.footer_block-item02 {
+  min-width: 252px;
+  text-align: left;
+}
+
+.footer_block-item03 {
+  max-width: 256px;
+}
+
+.item02-text {
+  margin-top: 6px;
+}
+
+.block_item-text {
+  margin-top: 5px;
 }
