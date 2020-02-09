@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none; 
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+  "header header header"
+  "nav article article"
+  "nav news news"
+  "nav features features"
+  "footer footer footer";
+
+  grid-template-rows: repeat(auto-fill, minmax(100px, auto));
+  grid-template-columns: 15% 1fr;
+  grid-gap: 10px;
+  // height: 100vh;
+  margin: 0;
+  }
+
+  header, footer, article, nav, div {
+  padding: 20px;
+  background: gold;
+  }
+
+  .header {
+  grid-area: header;
+  }
+
+  .footer {
+  grid-area: footer;
+  }
+
+  .article {
+    grid-area: article;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    .item {
+      background-color: lightgreen;
+      margin: 5px;
+      text-align: center;
+    }
+  }
+
+  .nav {
+  grid-area: nav;
+  }
+
+  .news {
+    grid-area: news;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    .news01, .news02, .news03 {
+      background-color: lightgreen;
+      margin: 5px;
+      text-align: center;
+    }
+  }
+
+  .features {
+    grid-area: features;
+  }
